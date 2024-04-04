@@ -53,6 +53,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+1. I set up my project with React, Vite, and Tailwind CSS. I used the command npx create-vite todo-app --template react-ts && cd todo-app && npm install tailwindcss@latest postcss@latest autoprefixer@latest && npx tailwindcss init -p, which creates a new Vite project with a React and TypeScript template, installs Tailwind CSS, PostCSS, and Autoprefixer, and initializes a new Tailwind CSS configuration file.
+2. I completed a thorough review of all the design resources for the project. After, I transferred my images and icons into the assets directory. In addition, I incorporated the Google Font and color schemes into my Tailwind configuration file.
+
 ### Built with
 
 - Semantic HTML5 markup
