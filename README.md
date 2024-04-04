@@ -65,7 +65,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
         - Display based on choice of items
         - Counter of how many items left
         - Drop and drag to reorder the list
-
+4. I decided to proritize the core funtionality first before moving to features.
 
 ### Built with
 
