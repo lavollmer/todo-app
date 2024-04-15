@@ -67,6 +67,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
         - Drop and drag to reorder the list
 4. I decided to proritize the core funtionality first before moving to features.
 5. I started by working on the todo adding information to the application.
+6. I started to determine next steps for the coding process.
 
 ### Built with
 
