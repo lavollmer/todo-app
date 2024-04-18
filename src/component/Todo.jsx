@@ -36,6 +36,7 @@ const Todo = () => {
     <div>
         {/* onSubmit prop is used to call the addTodo function when the form is submitted */}
       <form onSubmit={addTodo}>
+        {/* added input information for props */}
         <input
           type="text"
           value={inputValue}
