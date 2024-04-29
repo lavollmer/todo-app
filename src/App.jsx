@@ -1,11 +1,9 @@
 import "./App.css";
-import Todo from "./component/Todo";
-import Background from "./component/Background";
 import { useColorMode, Box } from "@chakra-ui/react";
 import { useState } from "react";
 import lightBackgroundImage from "./assets/images/bg-desktop-light.jpg";
 import darkBackgroundImage from "./assets/images/bg-desktop-dark.jpg";
-import Header from "./component/Header";
+import Header from "./component/Header"
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
