@@ -28,7 +28,7 @@ const InputButton = ({ colorMode, todo, setTodo, addTodo }) => {
           placeholder="Enter your todo help ..."
           ml={".5em"}
           value={todo}
-          onChange={(e) => set.todo(e.target.value)}
+          onChange={(e) => setTodo(e.target.value)}
           onKeyDown={addTodo}
         />
       </InputGroup>

@@ -13,13 +13,15 @@ function App() {
   const [todo, setTodo] = useState("");
   const [todos, setTodos] = useState([]);
 
-  const addTodo = (e) => {
+  const handleAddTodo = (e) => {
     if (todo && e.KeyCode === 13) {
       const newTodo = {
         id: v4(),
         title: todo,
         isCompleted: false,
       };
+
+      addTodo(newTodo);
     }
   };
 
@@ -39,7 +41,7 @@ function App() {
             colorMode={colorMode}
             todo={todo}
             setTodo={setTodo}
-            addTodo={addTodo}
+            addTodo={handleAddTodo}
           />
         </Box>
       </Box>
