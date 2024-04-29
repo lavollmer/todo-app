@@ -1,7 +1,7 @@
 import { Flex, InputGroup, InputLeftElement, Input } from "@chakra-ui/react";
 import Circle from "./Circle";
 
-const InputButton = ({ colorMode }) => {
+const InputButton = ({ colorMode, todo, setTodo, addTodo }) => {
   return (
     <Flex
       m="2.5em 0"
@@ -26,6 +26,10 @@ const InputButton = ({ colorMode }) => {
           h="3em"
           variant={"unstyled"}
           placeholder="Enter your todo help ..."
+          ml={".5em"}
+          value={todo}
+          onChange={(e) => set.todo(e.target.value)}
+          onKeyDown={addTodo}
         />
       </InputGroup>
     </Flex>

@@ -4,10 +4,22 @@ import lightBackgroundImage from "./assets/images/bg-desktop-light.jpg";
 import darkBackgroundImage from "./assets/images/bg-desktop-dark.jpg";
 import Header from "./component/Header";
 import InputButton from "./component/InputButton";
+import {v4} from "uuid";
 
 //functional app component that uses the useColorMode hook from Chakra UI
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
+  const [todo, setTodo] = useState("");
+  const [todos, setTodos] = useState([]);
+
+  const addTodo = (e) => {
+if (todo && e.KeyCode === 13) { 
+  const newTodo = {
+    id:
+    title: todo,
+  }
+}
+  }
 
   return (
     <>
