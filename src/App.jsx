@@ -1,10 +1,11 @@
 import "./App.css";
+import { useState } from "react";
 import { useColorMode, Box } from "@chakra-ui/react";
 import lightBackgroundImage from "./assets/images/bg-desktop-light.jpg";
 import darkBackgroundImage from "./assets/images/bg-desktop-dark.jpg";
 import Header from "./component/Header";
 import InputButton from "./component/InputButton";
-import {v4} from "uuid";
+import { v4 } from "uuid";
 
 //functional app component that uses the useColorMode hook from Chakra UI
 function App() {
@@ -13,13 +14,14 @@ function App() {
   const [todos, setTodos] = useState([]);
 
   const addTodo = (e) => {
-if (todo && e.KeyCode === 13) { 
-  const newTodo = {
-    id:
-    title: todo,
-  }
-}
-  }
+    if (todo && e.KeyCode === 13) {
+      const newTodo = {
+        id: v4(),
+        title: todo,
+        isCompleted: false,
+      };
+    }
+  };
 
   return (
     <>
@@ -33,7 +35,12 @@ if (todo && e.KeyCode === 13) {
       >
         <Box w="40%" p="4em 0" m="auto">
           <Header colorMode={colorMode} toggleColorMode={toggleColorMode} />
-          <InputButton colorMode={colorMode} />
+          <InputButton
+            colorMode={colorMode}
+            todo={todo}
+            setTodo={setTodo}
+            addTodo={addTodo}
+          />
         </Box>
       </Box>
     </>
