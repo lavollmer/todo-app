@@ -1,4 +1,5 @@
 import { Flex, InputGroup, InputLeftElement } from "@chakra-ui/react";
+import Circle from "./Circle"
 
 const InputButton = ({ colorMode }) => {
   return (
@@ -15,7 +16,9 @@ const InputButton = ({ colorMode }) => {
           justifyContent={"center"}
           alignItems={"center"}
           h={"100%"}
-        ></InputLeftElement>
+        >
+          <Circle width={"22px"} height={"22px"} />
+        </InputLeftElement>
       </InputGroup>
     </Flex>
   );
