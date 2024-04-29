@@ -1,14 +1,14 @@
 import "./App.css";
 import Todo from "./component/Todo";
-import Header from "./component/Header";
+import Background from "./component/Background";
 
 function App() {
+const {colorMode, toggleColorMode} = useColorMode();
+
   return (
     <>
-      <div className="bg-black">
-        <Header />
-        <Todo />
-      </div>
+      <Background />
+      <Todo />
     </>
   );
 }
