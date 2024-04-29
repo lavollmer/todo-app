@@ -18,7 +18,7 @@ function App() {
         h={"40vh"}
       >
         <Box w="40%" p="4em 0" m="auto">
-          <Header/>
+          <Header colorMode={colorMode} toggleColorMode={toggleColorMode}/>
         </Box>
       </Box>
     </>
