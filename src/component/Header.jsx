@@ -13,7 +13,7 @@ const Header = ({ colorMode, toggleColorMode }) => {
         TODO
       </Heading>
       {/* Button component is used to create a button that toggles color mode */}
-      <Button variant={"ghost"} onClick={toggleColorMode}>
+      <Button variant={"ghost"} onClick={toggleColorMode} _hover="none" _active="none">
         {/* Image component is used to display an icon inside the button */}
         <Image src={colorMode === "light" ? moonIcon : sunIcon} />
       </Button>
