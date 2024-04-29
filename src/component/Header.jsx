@@ -8,7 +8,7 @@ const Header = ({colorMode, toggleColorMode}) => {
     <Flex justifyContent={"space-between"}>
       <Heading as="h2" size="xl" color="white" letterSpacing={".5em"}>TODO</Heading>
     <Button variant={"ghost"} onClick={toggleColorMode}>
-        <Image/>
+        <Image src={colorMode === "light" ? moonIcon : sunIcon}/>
     </Button>
     </Flex>
   );
