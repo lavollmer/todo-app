@@ -6,6 +6,8 @@ import darkBackgroundImage from "./assets/images/bg-desktop-dark.jpg";
 import Header from "./component/Header";
 import InputButton from "./component/InputButton";
 import { v4 } from "uuid";
+import TodoList from "./component/TodoList";
+import {useEffect} from "react";
 
 //functional app component that uses the useColorMode hook from Chakra UI
 function App() {
@@ -25,6 +27,10 @@ function App() {
       setTodo("");
     }
   };
+
+  useEffect(() => {
+    fetchTodos().then((data) => setTodos(data));
+  }, []);
 
   return (
     <>
@@ -59,7 +65,9 @@ function App() {
           left={{ lg: "28em", md: "15.2em" }}
           borderRadius={"5px"}
           background={colorMode === "light" ? "white" : "w1a202c"}
-        ></Box>
+        >
+          <TodoList todos={todos} colorMode={colorMode} />
+        </Box>
       </Box>
     </>
   );
