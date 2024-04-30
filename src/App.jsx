@@ -22,6 +22,7 @@ function App() {
       };
 
       addTodo(newTodo);
+      setTodo("");
     }
   };
 
@@ -50,7 +51,16 @@ function App() {
         backgroundSize={"cover"}
         background={"#242424"}
         positive={"relative"}
-      ></Box>
+      >
+        <Box
+          w={"40%"}
+          position={"absolute"}
+          top={"-10"}
+          left={{ lg: "28em", md: "15.2em" }}
+          borderRadius={"5px"}
+          background={colorMode === "light" ? "white" : "w1a202c"}
+        ></Box>
+      </Box>
     </>
   );
 }
