@@ -45,6 +45,12 @@ function App() {
           />
         </Box>
       </Box>
+      <Box
+        h={"60vh"}
+        backgroundSize={"cover"}
+        background={"#242424"}
+        positive={"relative"}
+      ></Box>
     </>
   );
 }
